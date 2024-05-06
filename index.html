@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <style>
+        
+
+        /* Restart */
+        #restart_box{
+            margin-top: 4.9rem;
+
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        #restart_input{
+            display: flex;
+            gap: 1;
+        }
+        #restart_email{
+            height: 3.4rem;
+            width: 100%;
+            max-width: 47rem;
+            background-color: rgba(0, 0, 0, 0.657);
+            border: solid 1px rgba(148, 147, 147, 0.703);
+            border-radius: 5px;
+            
+            padding-left: 15px;
+            /* font-weight: 600; */
+            font-size: 1rem;
+        }
+        #restart_btn{
+            height: 3.4rem;
+            width: 12rem;
+            min-width: 10rem;
+            margin-left: 0.6rem;
+            padding: auto;
+            background-color: rgb(218, 14, 14);
+            
+            font-size: 1.4rem;
+            font-weight: 600;
+
+            border: none;
+            border-radius: 5px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition: background-color 0.2s ;
+        }
+        #restart_btn:hover{
+            background-color:rgb(179, 25, 25);
+        }
+        
+        /* Footer */
+        #footer_container{
+            margin-top: 1.8rem;
+            padding: 0 24px 96px;
+            
+            display: flex;
+            flex-direction: column;
+            gap: 2.8rem;
+        }
+        #footer_para{
+            color: #b4aeae;
+        }
+        #footer_grid{
+            /* background-color: cadetblue; */
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .footer_list{
+            list-style-type: none;
+            font-size: 0.9rem;
+            
+            display: flex;
+            color: #b4aeae;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .footer_list a{
+            text-decoration: underline;
+            color: #b4aeae;
+        }
+        .footer_btn{
+            width: 3rem;
+            margin-top: 1rem;
+            border-radius: 50%;
+            
+            border: solid 1px rgba(148, 147, 147, 0.703);
+            border-radius: 4px;
+            padding: 6.2px 30px;
+        }
+        #footer_name{
+            color: #b4aeae;
+            font-size: 0.9rem;
+        }
+        
+        @media screen and (max-width:800px){
+            #q_container{
+                padding-right: 0;
+            }
+            #footer_container{
+                padding: 0 10px 96px;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            #restart_input{
+                flex-direction: column;
+            }
+            #restart_input{
+                flex-direction: column;
+                gap: 1rem;
+            }
+            #restart_email{
+                width: 95%;
+            }
+            #restart_btn{
+                margin: 0;
+                height: 2.8rem;
+                width: 100%;    
+                max-width: 9rem;
+                font-size: 1.15rem;
+            }
+            #footer_grid{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            #footer_grid{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        </style>
+</head>
+<body>
+    
+    <div id="main_container">
+        <nav id="navbar">
+            <img id="nav_logo" src="./Material/Images/logo.svg" alt="logo">
+            
+            <div id="nav_btns">
+                <div id="lang_btn">English</div>
+                <a id="signin_btn" href="#Signin">Sign In</a>
+            </div>
+            
+        </nav>
+        
+        <main>   
+            <div id="main_content">
+                
+                <div id="main_head">
+                    <h1>Unlimited movies, TV shows and more</h1>
+                    <p>Starts at ₹149. Cancel anytime.</p>
+                </div>
+                
+                <div id="main_input">
+                    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                    <div id="input_box">
+                        <input id="email_input" type="text" placeholder="Email address">
+                        <button id="email_btn" >Get Started ></button>
+                    </div>
+                </div>
+                
+            </div>
+        </main>  
+        
+        <div id="black_box">
+        </div>
+    </div>
+    
+    <div id="line_container">
+        <div id="shade">
+            <div id="line">
+            </div>
+        </div>
+    </div>
+
+    <div id="major_container">
+        <div id="plan_container">
+            <h2 id="plan_head">Plans to suit your needs and your budget</h2>
+            <p id="plan_para">Enjoy Netflix starting at just ₹149.</p>
+        </div>
+
+        <div id="card_container">
+            <p class="card_head">More reasons to join</p>
+            <div id="card_grid">
+
+                <!-- card 1 -->
+                <div class="card">
+                    <h3>Enjoy on your TV</h3>
+                    <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                    <img class="card_img" src="./Material/Images/tv.png" alt="">
+                </div>
+
+                <!-- card 2 -->
+                <div class="card">
+                    <h3>Download your shows to watch offline</h3>
+                    <p>Save your favourites easily and always have something to watch.</p>
+                    <img class="card_img" src="./Material/Images/download.png" alt="">
+                </div>
+
+                <!-- card 3 -->
+                <div class="card">
+                    <h3>Watch everywhere</h3>
+                    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+                    <img class="card_img" src="./Material/Images/scope.png" alt="">
+                </div>
+
+                <!-- card 4 -->
+                <div class="card">
+                    <h3>Create profiles for kids</h3>
+                    <p>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p>
+                    <img class="card_img" src="./Material/Images/sticker.png" alt="">
+                </div>
+            </div>
+        </div> 
+
+        <div id="q_container">
+            <p class="card_head">Frequently Asked Questions</p>
+            <div id="q_list">
+                <ul style="list-style-type: none;">
+                    <li class="question">
+                        <p>What is Netflix?</p>
+                        <span>+</span>
+                    </li>
+                    <li class="question">
+                        <p>How much does Netflix cost?</p>
+                        <span>+</span>
+                    </li>
+                    <li class="question">
+                        <p>Where can I watch?</p>
+                        <span>+</span>
+                    </li>
+                    <li class="question">
+                        <p>How do can I cancel?</p>
+                        <span>+</span>
+                    </li>
+                    <li class="question">
+                        <p>What can I watch on Netflix?</p>
+                        <span>+</span>
+                    </li>
+                    <li class="question">
+                        <p>Is Netflix good for kids?</p>
+                        <span>+</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="restart_box">
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div id="restart_input">
+                <input id="restart_email" type="email" placeholder="Email address">
+                <a id="restart_btn" href="#start"><pre>Get Started  ></pre></a>
+            </div>
+        </div>
+
+        <div id="footer_container">
+            <p id="footer_para">Questions? Call <span style="text-decoration: underline;color: #b4aeae;">000-800-919-1694</span></p>
+            <div id="footer_grid">
+
+                <div class="list_container">
+                    <ul class="footer_list">
+                        <li class="list_ele"><a href="#">FAQ</a></li>
+                        <li class="list_ele"><a href="#">Investor Relations</a></li>
+                        <li class="list_ele"><a href="#">Privacy</a></li>
+                        <li class="list_ele"><a href="#">Speed Test</a></li>
+                    </ul>
+                </div>
+                <div class="list_container">
+                    <ul class="footer_list">
+                        <li class="list_ele"><a href="#">Help Centre</a></li>
+                        <li class="list_ele"><a href="#">Jobs</a></li>
+                        <li class="list_ele"><a href="#">Cookie Preferences</a></li>
+                        <li class="list_ele"><a href="#">Legal Notices</a></li>
+                    </ul>
+                </div>
+                <div class="list_container">
+                    <ul class="footer_list">
+                        <li class="list_ele"><a href="#">Account</a></li>
+                        <li class="list_ele"><a href="#">Ways to Watch</a></li>
+                        <li class="list_ele"><a href="#">Corporate Information</a></li>
+                        <li class="list_ele"><a href="#">Only on Netflix</a></li>
+                    </ul>
+                </div>
+                <div class="list_container">
+                    <ul class="footer_list">
+                        <li class="list_ele"><a href="#">Media Centre</a></li>
+                        <li class="list_ele"><a href="#">Terms of Use</a></li>
+                        <li class="list_ele"><a href="#">Contact Us</a></li>
+                        <li class="list_ele"><a href="#"></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer_btn">English</div>
+            <p id="footer_name">Netflix India</p>
+
+        </div>
+    </div>
+</body>
+</html>
